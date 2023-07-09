@@ -1,17 +1,14 @@
-package poo.classes;
+package poo.classes.ejercicios;
 
 public class Main2 {
 
     public static void main(String[] args) {
 
-        SmartPhone galaxyA51 = new SmartPhone();
-        SmartWatch apple2e = new SmartWatch("2e", 8, 64.0);
+        SmartWatch smartWatch = new SmartWatch("2e", 8);
 
-        SmartPhone iphone9 = new SmartPhone("Apple", "iphone9", 2.1, 2013, false, 128, SmartWatch);
+        SmartPhone smartPhone = new SmartPhone("Apple", "iphone9", 2.1, 2013, false, 128);
 
-        System.out.println(iphone9.fabricant);
-        System.out.println(iphone9.yearr);
-        System.out.println(iphone9.size);
+        System.out.println("El smartphone es: " + smartPhone + "\nEl smartwatch es: " + smartWatch);
+
     }
-
 }
