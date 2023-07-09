@@ -1,18 +1,27 @@
-package poo.classes;
+package poo.classes.ejercicios;
 
 public class SmartWatch {
 
     String model;
     int ram;
-    double gigas;
 
     public SmartWatch(){
+        super();
     }
 
-    public SmartWatch(String model, int ram, double gigas) {
+    public SmartWatch(String fabricant, String model, double size, int yearr, boolean plegable, int memoria, String color, int ram) {
         this.model = model;
         this.ram = ram;
-        this.gigas = gigas;
     }
 
+    public SmartWatch(String s, int i) {
+    }
+
+    @Override
+    public String toString() {
+        return "SmartWatch{" +
+                "model='" + model + '\'' +
+                ", ram=" + ram +
+                '}';
+    }
 }
