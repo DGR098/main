@@ -1,0 +1,17 @@
+package poo.classes;
+
+public class Main2 {
+
+    public static void main(String[] args) {
+
+        SmartPhone galaxyA51 = new SmartPhone();
+        SmartWatch apple2e = new SmartWatch("2e", 8, 64.0);
+
+        SmartPhone iphone9 = new SmartPhone("Apple", "iphone9", 2.1, 2013, false, 128, SmartWatch);
+
+        System.out.println(iphone9.fabricant);
+        System.out.println(iphone9.yearr);
+        System.out.println(iphone9.size);
+    }
+
+}
