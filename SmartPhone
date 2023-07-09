@@ -1,0 +1,8 @@
+package poo.classes;
+
+import poo.classes.SmartDevice;
+
+public class SmartPhone extends poo.classes.SmartDevice {
+
+    String color;
+}
