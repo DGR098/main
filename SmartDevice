@@ -1,7 +1,7 @@
-package poo.classes;
+package poo.classes.ejercicios;
 
 public class SmartDevice {
-    // 1. atributos
+
     String fabricant;
     String model;
     double size;
@@ -9,9 +9,7 @@ public class SmartDevice {
     boolean plegable;
     int memoria;
 
-    // 2. constructores
     public SmartDevice(){
-
     }
 
     public SmartDevice(String fabricant, String model, double size, int yearr, boolean plegable, int memoria) {
