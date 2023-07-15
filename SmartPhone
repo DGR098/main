@@ -1,29 +1,25 @@
-package poo.classes.ejercicios;
+package ejercicioCuatro;
+public class SmartPhone extends SmartDevice{
+    int ram;
+    String sistema;
 
-public class SmartPhone extends SmartDevice {
-
-    String color;
     public SmartPhone() {
         super();
     }
-    public SmartPhone(String fabricant, String model, double size, int yearr, boolean plegable, int memoria, String color) {
-        super(fabricant, model, size, yearr, plegable, memoria);
-        this.color = color;
-    }
 
-    public SmartPhone(String apple, String iphone9, double v, int i, boolean b, int i1) {
+    public SmartPhone(String marca, String modelo, String color, int ram, String sistema) {
+        super(marca, modelo, color);
+        this.ram = ram;
+        this.sistema = sistema;
     }
 
     @Override
     public String toString() {
-        return "SmartPhone{" +
-                "color='" + color + '\'' +
-                ", fabricant='" + fabricant + '\'' +
-                ", model='" + model + '\'' +
-                ", size=" + size +
-                ", yearr=" + yearr +
-                ", plegable=" + plegable +
-                ", memoria=" + memoria +
-                '}';
+        return "marca=" + marca +
+            ", modelo=" + modelo +
+            ", color=" + color +
+            ", ram=" + ram +
+            ", sistema" + sistema;
     }
+
 }
