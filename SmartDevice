@@ -1,24 +1,19 @@
-package poo.classes.ejercicios;
+package ejercicioCuatro;
 
 public class SmartDevice {
-
-    String fabricant;
-    String model;
-    double size;
-    int yearr;
-    boolean plegable;
-    int memoria;
+    
+    String marca;
+    String modelo;
+    String color;
 
     public SmartDevice(){
+
     }
 
-    public SmartDevice(String fabricant, String model, double size, int yearr, boolean plegable, int memoria) {
-        this.fabricant = fabricant;
-        this.model = model;
-        this.size = size;
-        this.yearr = yearr;
-        this.plegable = plegable;
-        this.memoria = memoria;
+    public SmartDevice(String marca, String modelo, String color) {
+        this.marca = marca;
+        this.modelo = modelo;
+        this.color = color;
     }
-
 }
+
