@@ -1,27 +1,26 @@
-package poo.classes.ejercicios;
+package ejercicioCuatro;
+import javax.print.attribute.SetOfIntegerSyntax;
 
-public class SmartWatch {
+public class SmartWatch extends SmartDevice {
+    double pulgadas;
+    String conectividad;
 
-    String model;
-    int ram;
-
-    public SmartWatch(){
+    public SmartWatch() {
         super();
     }
 
-    public SmartWatch(String fabricant, String model, double size, int yearr, boolean plegable, int memoria, String color, int ram) {
-        this.model = model;
-        this.ram = ram;
-    }
-
-    public SmartWatch(String s, int i) {
+    public SmartWatch(String marca, String modelo, String color, double pulgadas, String conectividad) {
+        super(marca, modelo, color);
+        this.pulgadas = pulgadas;
+        this.conectividad = conectividad;
     }
 
     @Override
     public String toString() {
-        return "SmartWatch{" +
-                "model='" + model + '\'' +
-                ", ram=" + ram +
-                '}';
+        return "marca=" + marca +
+            ", modelo=" + modelo +
+            ", pulgadas=" + pulgadas +
+            ", conectividad=" + conectividad;
     }
+    
 }
