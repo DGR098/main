@@ -1,14 +1,14 @@
-package poo.classes.ejercicios;
-
-public class Main2 {
-
+package ejercicioCuatro;
+public class main {
+    
     public static void main(String[] args) {
+        
+        SmartPhone smartPhone = new SmartPhone("Samsung", "S10", "Azul", 8, "Android");
 
-        SmartWatch smartWatch = new SmartWatch("2e", 8);
+        SmartPhone smartPhone2  = new SmartPhone("LG", "Black", "Blanco", 4, "Android");
 
-        SmartPhone smartPhone = new SmartPhone("Apple", "iphone9", 2.1, 2013, false, 128);
+        SmartWatch smartWatch = new SmartWatch("Xiaomi", "Mi 6", "Negro", 3.5, "Bluetoth");
 
-        System.out.println("El smartphone es: " + smartPhone + "\nEl smartwatch es: " + smartWatch);
-
+        System.out.println("Los smartPhone son " +  smartPhone + "\nY " + smartPhone2 + "\nEl smartwatch es: " + smartWatch);
     }
 }
